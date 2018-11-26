@@ -122,7 +122,7 @@ while True:
 		dst2 = Images(roi_bg,dim2).combine(roi_bg2,roi_fg2)
 		frame[points[0]:points[1],points[2]:points[3]] = dst2
 		cv2.imshow('Hair cover',dst2)	
-	
+# ----------------------------------------------------	
 	for face_landmarks in face_list:
 		canvas = Image.fromarray(frame)
 		d = ImageDraw.Draw(canvas, 'RGBA')
